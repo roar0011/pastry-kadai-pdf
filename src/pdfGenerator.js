@@ -244,7 +244,7 @@ export async function generateDispatchPDF(filteredOrders, dateStr, slotDef) {
   const PAGE_W = 792;
   const MARGIN = 30;
 
-  await applyCalibri(doc);
+  await applyFont(doc);
 
   const sorted = sortByDistance(filteredOrders);
 
@@ -349,7 +349,7 @@ export async function generateRapidoPDF(filteredOrders, dateStr, slotDef) {
   const PAGE_W = 792;
   const MARGIN = 30;
 
-  await applyCalibri(doc);
+  await applyFont(doc);
 
   const sorted = sortByDistance(filteredOrders);
 
